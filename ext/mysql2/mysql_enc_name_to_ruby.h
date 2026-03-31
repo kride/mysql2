@@ -40,9 +40,7 @@ inline
 #endif
 #endif
 static unsigned int
-mysql2_mysql_enc_name_to_rb_hash (str, len)
-     register const char *str;
-     register unsigned int len;
+mysql2_mysql_enc_name_to_rb_hash (const char *str, unsigned int len)
 {
   static const unsigned char asso_values[] =
     {
@@ -83,9 +81,7 @@ __attribute__ ((__gnu_inline__))
 #endif
 #endif
 const struct mysql2_mysql_enc_name_to_rb_map *
-mysql2_mysql_enc_name_to_rb (str, len)
-     register const char *str;
-     register unsigned int len;
+mysql2_mysql_enc_name_to_rb (const char *str, unsigned int len)
 {
   enum
     {
